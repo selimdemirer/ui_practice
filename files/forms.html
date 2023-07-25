@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Form</title>
 </head>
 <body>
+
+
+<form>
+    <p>
+        Username:
+        <input type="text" name="username">
+    </p>
+    <p>
+        Password:
+        <input type="password">
+    </p>
+    <p>What did you think of this trip?</p>
+    <textarea cols="35" rows="7" placeholder="Enter your comment here"></textarea>
+    <br>
+    <p>Select your favorite food:</p>
+    <input type="radio" name="food" value="burger">Burger               <!--type and name need to be same, value need to be different to be able to choose only one-->
+    <input type="radio" name="food" value="kabab" checked>Kabab
+    <input type="radio" name="food" value="salad" disabled>Salad
+    <br>
+    <p>Pick a date:
+    <input type="date">
+    </p>
+    <input type="datetime-local">
+    <p>Please upload your resume:
+        <br>
+        <input type="file">
+    </p>
+    <label for="j">
+        <input type="checkbox" name="course" value="java" id="j">Java
+    </label>
+    <input type="checkbox" name="course" value="DS">DS
+    <input type="checkbox" name="course" value="UI">UI
+    <input type="checkbox" name="course" value="softSkill">Soft Skill
+    <p>Please select the program</p>
+    <select name="course">
+        <option value="" disabled selected>Seelct a program</option>
+        <option value="jd">Java Developer</option>
+        <option value="sdet">Java SDET</option>
+        <option value="cb">Cyber Security</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" value="Sign Up">
+
+</form>
+
 
 </body>
 </html>
